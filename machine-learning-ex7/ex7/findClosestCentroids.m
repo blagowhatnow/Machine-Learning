@@ -26,7 +26,7 @@ distance = [];
 for c=1:K
      distances = bsxfun(@minus, X, centroids(c,:));
      distances = sum(distances.^2,2);
-     distance = [distance, distances];  
+     distance = [distance; distances];  
 end
 
 idx=[];
